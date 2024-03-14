@@ -25,7 +25,7 @@ function Home() {
 		: data;
 
 	return (
-		<>
+		<div className="home-container">
 			<div className="filter-option">
 				<select
 					onChange={(e) => filterHandler(e.target.value)}
@@ -41,7 +41,7 @@ function Home() {
 			</div>
 
 			<CardContainer data={filterData} />
-		</>
+		</div>
 	);
 }
 
