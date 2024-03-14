@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import { toast } from "react-toastify";
-const Card = ({ id, state, info, image, price }) => {
+const Card = ({ id, name, state, info, image, price }) => {
 	const [booked, setBooked] = useState(false);
 
 	const bookingHandler = (id, state) => {
@@ -13,7 +13,7 @@ const Card = ({ id, state, info, image, price }) => {
 			<img src={image} className="image" alt="error"></img>
 
 			<div className="tour-details">
-				<h2 className="tour-name">{state}</h2>
+				<h2 className="tour-name">{name}</h2>
 				<h2 className="tour-price">{price}</h2>
 			</div>
 
